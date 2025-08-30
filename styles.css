@@ -1,9 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   margin: 0;
   font-family: Arial, sans-serif;
   height: 100vh;
   overflow: hidden;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 .bg-lightblue {
@@ -59,6 +65,9 @@ body {
   flex: 1;
   transition: all 0.3s ease;
   border-radius: 5px;
+  min-height: 44px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .tab-btn.active {
@@ -89,6 +98,9 @@ body {
   padding: 8px 15px;
   border-radius: 5px;
   transition: all 0.3s ease;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
 }
 
 #nav-links a:hover {
@@ -133,6 +145,7 @@ body {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 100%;
 }
 
 .about-text {
@@ -242,6 +255,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
+  max-width: 100%;
 }
 
 .diploma-image a:hover img {
@@ -420,32 +434,204 @@ h4 {
 }
 
 @media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+
   .side-nav {
     width: 100%;
     height: auto;
     position: relative;
+    padding: 15px;
+    order: -1;
   }
 
   #main-content {
     margin-left: 0;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .bg-lightblue {
+    height: auto;
+    overflow-y: visible;
+    padding: 15px;
+  }
+
+  .tabs {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .tab-btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  #nav-links {
+    margin-top: 15px;
+  }
+
+  #nav-links li {
+    margin: 8px 0;
+  }
+
+  #nav-links a {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .social-buttons {
+    padding: 15px 0;
+    justify-content: center;
+  }
+
+  .content-section, .about-section {
+    padding: 20px 15px;
+    margin-bottom: 20px;
   }
 
   .about-container {
     flex-direction: column;
+    gap: 20px;
+    text-align: center;
   }
 
   .about-image {
     flex: 0 0 auto;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+
+  .company-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .company-logo {
+    width: 50px;
+    height: 50px;
   }
 
   .education-content {
     flex-direction: column;
+    gap: 20px;
   }
   
   .diploma-image {
     flex: 0 0 auto;
-    max-width: 300px;
-    margin: 20px auto 0;
+    max-width: 100%;
+    margin: 15px auto 0;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .skill-category {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .accordion-button {
+    font-size: 0.95rem;
+    padding: 12px 15px;
+  }
+
+  .ctf-header, .challenge-header, .malware-header {
+    align-items: flex-start;
+  }
+
+  .challenge-category, .malware-category {
+    font-size: 0.85em;
+  }
+
+  .malware-meta-inline {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .side-nav {
+    padding: 10px;
+  }
+
+  #main-content {
+    padding: 10px;
+  }
+
+  .bg-lightblue {
+    padding: 10px;
+  }
+
+  .content-section, .about-section {
+    padding: 15px 10px;
+    margin-bottom: 15px;
+  }
+
+  .tab-btn {
+    padding: 6px 8px;
+    font-size: 0.85rem;
+  }
+
+  .about-image {
+    max-width: 200px;
+  }
+
+  .company-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .diploma-image {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .accordion-button {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+
+  .social-btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .social-btn svg {
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -503,6 +689,8 @@ h4 {
   font-size: 1.05rem;
   border-radius: 8px !important;
   transition: background 0.2s, color 0.2s;
+  min-height: 44px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .accordion-button:not(.collapsed) {
@@ -596,4 +784,32 @@ h4 {
 .ctf-certificate {
   margin-top: 2rem;
   text-align: center;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure code blocks don't overflow on mobile */
+code {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* Better link styling for mobile */
+a {
+  -webkit-tap-highlight-color: rgba(52, 152, 219, 0.3);
+}
+
+/* Prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Better touch targets */
+button, .btn, .social-btn {
+  min-height: 44px;
+  min-width: 44px;
 }
