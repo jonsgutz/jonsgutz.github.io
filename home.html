@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  <title>Jonathan Gutzmer - Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Side Navigation -->
+  <nav class="side-nav d-flex flex-column align-items-center">
+    <div class="tabs d-flex justify-content-between w-100">
+      <a href="/home.html" class="tab-btn active btn btn-light flex-grow-1">Home</a>
+      <a href="/write-ups.html" class="tab-btn btn btn-light flex-grow-1">Write-ups</a>
+    </div>
+    <ul id="nav-links" class="mt-5">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#experience">Professional Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+    <div class="social-buttons mt-auto">
+      <a href="https://linkedin.com/in/jonathan-gutzmer" target="_blank" class="social-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+      </a>
+      <a href="https://github.com/jonsgutz/" target="_blank" class="social-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <div id="main-content" class="bg-lightblue">
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="images/MCSF_Headshot.png" alt="Headshot profile image">
+        </div>
+        <div class="about-text">
+          <h1>Jonathan Gutzmer</h1>
+          <p>I'm a passionate cybersecurity professional with a focus on reverse engineering and malware analysis, and offensive security experience in both malware research and web application testing. Through coursework, home labs, CTF competitions, certifications, and hands-on experience, I've built a solid foundation in cybersecurity. I have coding and scripting experience in Java, PowerShell, Python, Rust, and C, along with a strong understanding of networking, modern web design, and cryptography. My practical skills extend to tools like Ghidra, Wireshark, the Metasploit framework, and Burp Suite, which I've utilized in my professional experience, lab environments, and CTF challenges mimicking real-world scenarios. With excellent communication skills and a relentless drive to learn, I'm always eager to tackle new challenges and refine my technical expertise.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="content-section">
+      <h2>Professional Experience</h2>
+      <div class="experience-item">
+        <div class="company-header">
+          <div class="company-logo">
+            <img src="images/steerbridge-logo.png" alt="SteerBridge Logo">
+          </div>
+          <div class="company-info">
+            <h3>SteerBridge Strategies</h3>
+            <a href="https://steerbridge.com" target="_blank" class="company-link">SteerBridge.com</a>
+          </div>
+        </div>
+        <div class="job-title">Junior Cybersecurity Engineer</div>
+        <div class="job-dates">January 20, 2025 - Present</div>
+        <ul class="job-description">
+          <li>Implemented and maintained several VPN solutions for secure remote access to the company's resources.</li>
+          <li>Created and implemented policies and technical solutions to align with CMMC, ISO 27001, ISO 9000, and ISO 20000 compliance.</li>
+          <li>Performed incident response actions and implemented solutions to reduce the impact of similar incidents in the future.</li>
+          <li>Migrated a critical financial application to a more secure and easier to manage environment with minimal downtime to the application and users.</li>
+          <li>Administered the company's Microsoft tenant, including user management, access policies, and application provisioning.</li>
+          <li>Delivered full IT support, from technology onboarding to resolving daily helpdesk tickets.</li>
+        </ul>
+        
+        <!-- Company Projects Dropdown -->
+        <div class="company-projects">
+          <button class="projects-toggle" type="button" onclick="toggleProjects('company1-projects')">
+            <span class="toggle-icon">▶</span>
+            <span class="toggle-text">View Company Projects</span>
+          </button>
+          <div id="company1-projects" class="projects-content collapsed">
+            <div class="projects-grid">
+              <div class="project-card">
+                <h4>Network Overhaul</h4>
+                <p class="project-description">Led a major network overhaul from old equipment and a flat network to updated equipment and a network built with security first.</p>
+                <div class="tools-used">
+                  <span class="tool-tag">Networking</span>
+                  <span class="tool-tag">VPN</span>
+                </div>
+              </div>
+              <div class="project-card">
+                <h4>Financial Application Migration</h4>
+                <p class="project-description">Migrated a critical financial application from a failing on-prem server to an AWS deployment with restricted RDP access to the users who require access. Worked closely with the finance team to ensure all functionality remained and downtime was minimized. </p>
+                <div class="tools-used">
+                  <span class="tool-tag">AWS Networking</span>
+                  <span class="tool-tag">AWS Client VPN</span>
+                  <span class="tool-tag">RDP Server</span>
+                </div>
+              </div>
+              <div class="project-card">
+                <h4>VPN Deployments</h4>
+                <p class="project-description">Deployed several different VPN solutions for various internal solutions needing different levels of access. Configured some of the VPNs to use SSO with Microsoft as the IdP, and configured the VPNs to have valid domain names and HTTPS certificates.</p>
+                <div class="tools-used">
+                  <span class="tool-tag">Cisco Secure Client</span>
+                  <span class="tool-tag">Cisco Firepower Threat Defense Firewall</span>
+                  <span class="tool-tag">OpenVPN Access Server</span>
+                  <span class="tool-tag">IPsec VPN</span>
+                </div>
+              </div>
+              <div class="project-card">
+                <h4>Internal Application Testing</h4>
+                <p class="project-description">Performed web application testing against internal applications to find security flaws and provide remediation options. </p>
+                <div class="tools-used">
+                  <span class="tool-tag">Burp Suite</span>
+                  <span class="tool-tag">ZAProxy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="experience-item">
+        <div class="company-header">
+          <div class="company-logo">
+            <img src="images/hbs-logo.jpg" alt="Heartland Business Systems Logo">
+          </div>
+          <div class="company-info">
+            <h3>Heartland Business Systems</h3>
+            <a href="https://hbs.net" target="_blank" class="company-link">HBS.net</a>
+          </div>
+        </div>
+        <div class="job-title">Engineering Associate</div>
+        <div class="job-dates">May 21, 2024 - August 20, 2024</div>
+        <ul class="job-description">
+          <li>Troubleshot network and hardware issues, including firewalls (Palo Alto, SonicWall, Fortinet) and supported server installations, firmware updates, and VCenter deployments.</li>
+          <li>Assisted in physical installations of UPS units, servers, and switch replacements.</li>
+        </ul>
+      </div>
+      
+      <div class="experience-item">
+        <div class="company-header">
+          <div class="company-logo">
+            <img src="images/uwstout-logo.png" alt="UW-Stout Logo">
+          </div>
+          <div class="company-info">
+            <h3>University of Wisconsin Stout</h3>
+            <a href="https://www.uwstout.edu" target="_blank" class="company-link">UWStout.edu</a>
+          </div>
+        </div>
+        <div class="job-title">Supplemental Instructor</div>
+        <div class="job-dates">September 12, 2023 - May 2, 2024</div>
+        <ul class="job-description">
+          <li>Supported students in understanding course material which covered the content of the CCNA certification in a practical, hands-on lab environment.</li>
+          <li>Guided students in problem solving and critical thinking skills by pointing them in the right direction when they were stuck on a concept.</li>
+        </ul>
+      </div>
+      
+      <div class="experience-item">
+        <div class="company-header">
+          <div class="company-logo">
+            <img src="images/northwoods-logo.jpg" alt="Northwoods Orchard Logo">
+          </div>
+          <div class="company-info">
+            <h3>Northwoods Orchard</h3>
+            <a href="https://www.northwoodsorchard.com/" target="_blank" class="company-link">NorthwoodsOrchard.com</a>
+          </div>
+        </div>
+        <div class="job-title">Groundskeeper</div>
+        <div class="job-dates">May 13, 2019 - September 1, 2023</div>
+        <ul class="job-description">
+          <li>Maintained a 50-acre orchard property using various landscaping equipment.</li>
+          <li>Assisted in the harvesting and packing of apples and other orchard products.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education" class="content-section">
+      <h2>Education</h2>
+      <div class="education-item">
+        <div class="education-content">
+          <div class="education-text">
+            <h3>Bachelor's of Science in Cybersecurity</h3>
+            <div class="school-name">University of Wisconsin Stout</div>
+            <div class="gpa">Magna Cum Laude - GPA: 3.8</div>
+            <div class="minors-list">
+              <span class="minor-item">Minor in Computer Science</span>
+              <span class="minor-item">Minor in Information Security Management</span>
+              <span class="minor-item">Minor in Computer Networking System and Design</span>
+            </div>
+            <div class="degree-dates">September 7, 2022 - December 20, 2024</div>
+          </div>
+          <div class="diploma-image">
+            <a href="https://www.parchment.com/u/award/aaba78fe22643f30e89076c7327882bb" target="_blank">
+              <img src="images/Stout Diploma.png" alt="Bachelor's Degree Diploma">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="mt-4">Certifications</h3>
+      <div class="certification-item">
+        <h4>GIAC Security Essentials (GSEC)</h4>
+        <div class="cert-info">
+          <span class="cert-date">May 17, 2024 - May 31, 2028</span>
+          <a href="https://www.credly.com/badges/b207fabc-b5a2-4c0a-ae82-a432dea3fd3d" target="_blank" class="cert-link">View Certification</a>
+          <p class="cert-description">This certification provided me with a comprehensive understanding of the principles and practices of cybersecurity, including network security, incident response, access control, and risk management.</p>
+        </div>
+      </div>
+      <div class="certification-item">
+        <h4>CompTIA Security+</h4>
+        <div class="cert-info">
+          <span class="cert-date">January 17, 2024 - January 17, 2027</span>
+          <a href="https://www.credly.com/badges/b21a91d5-b6aa-4353-b02f-0d24c105fec6" target="_blank" class="cert-link">View Certification</a>
+          <p class="cert-description">This certification provided me with a solid foundation in cybersecurity concepts, including network security, cryptography, and security architecture.</p>
+        </div>
+      </div>
+      <div class="certification-item">
+        <h4>AWS Certified Specialty - Security</h4>
+        <div class="cert-info">
+          <span class="cert-date">June 10, 2025 - June 10, 2028</span>
+          <a href="https://www.credly.com/badges/351fa3e7-1d4d-4a36-9c74-8f9b7fb53913/" target="_blank" class="cert-link">View Certification</a>
+          <p class="cert-description">This certification provided me with a solid foundation in cybersecurity concepts, including network security, cryptography, and security architecture.</p>
+        </div>
+      </div>
+      <div class="certification-item">
+        <h4>GIAC Foundational Cybersecurity Technologies (GFACT)</h4>
+        <div class="cert-info">
+          <span class="cert-date">August 30, 2023 - August 31, 2027</span>
+          <a href="https://www.credly.com/badges/faa63efb-c297-4232-ab4b-0e0b8fa925fa" target="_blank" class="cert-link">View Certification</a>
+          <p class="cert-description">This certification provided me with an introductory understanding of many areas of cybersecurity, ranging from network security to basic software exploitation.</p>
+        </div>
+      </div>
+      <div class="certification-item">
+        <h4>Cisco Certified Network Associate (CCNA)</h4>
+        <div class="cert-info">
+          <span class="cert-date">August 16, 2024 - August 16, 2027</span>
+          <a href="https://www.credly.com/badges/8a59d5aa-0a68-46c5-9311-f3b07b9b0495" target="_blank" class="cert-link">View Certification</a>
+          <p class="cert-description">This certification solidified my understanding of networking fundamentals, including IP addressing, routing, and network security, with hands-on experience for all topics.</p>
+        </div>
+      </div>
+      <div class="certification-item">
+        <h4>Cisco Certified CyberOps Associate</h4>
+        <div class="cert-info">
+          <span class="cert-date">June 29, 2023 - August 16, 2027</span>
+          <a href="https://www.credly.com/badges/82c4fb72-dee7-45e5-b02c-bb81bed05f4c" target="_blank" class="cert-link">View Certification</a>
+          <p class="cert-description">This certification introduced me to the fundamentals of cybersecurity operations, such as security monitoring, threat analysis, and incident response, all in a simulated SOC environment</p>
+        </div>
+      </div>
+      <div class="certification-item">
+        <h4>TestOut Linux Pro</h4>
+        <div class="cert-info">
+          <span class="cert-date">May 5, 2023</span>
+          <p class="cert-description">This certification introduced me to the fundamentals of the Linux operating system, including file systems, networking, user administration, and security.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="content-section">
+      <h2>Projects</h2>
+      <div class="project-item">
+        <h3>Networking Home Lab</h3>
+        <div class="project-dates">2025 - Present</div>
+        <p class="project-description">I designed and built a home lab network to challenge me with building out a network of products that I've never used before but that I can use daily. The setup includes networking equipment to provide internet across my home, a firewall on the network edge, several ProxMox virtual machines, and VLAN segmentation for the different networks I created. Included in these virtual machines is a local Gitea instance for a private code repository, and a Security Onion instance for monitoring across my network. I also set up a remote access VPN solution for secure access to the network.</p>
+      </div>
+      <div class="project-item">
+        <h3>Malware Analysis Home Lab</h3>
+        <div class="project-dates">2024 - Present</div>
+        <p class="project-description">I set up a safe environment for analyzing malware samples, initially following TCM Security's Practical Malware Analysis & Triage but then expanding for use in personal projects. The lab setup is fairly simple, including only FlareVM and REMnux virtual machines, and a few other tools such as Pwndbg installed in addition. Using this lab, I analyzed several pieces of malware, starting with simple course material to more complex custom malware. I created analysis findings reports for different malware samples, which can soon be found under the "Write-ups" tab.</p>
+      </div>
+      <div class="project-item">
+        <h3>Various CTFs</h3>
+        <div class="project-dates">2022 - Present</div>
+        <p class="project-description">I regularly compete in various CTFs, including the annual Huntress CTF, OverTheWire Wargames, PicoCTF, National Cyber League, and more. Write-ups for Huntress CTF 2024 can be found under the "Write-ups" tab, with the majority of those challenges being in the Malware or Reverse Engineering categories.</p> 
+      </div>
+      <div class="project-item">
+        <h3>Creating CTF Challenges</h3>
+        <div class="project-dates">2024 - Present</div>
+        <p class="project-description">I created easy and medium difficulty malware and reversing challenges for the University of Wisconsin Stout's CTF contest, for high school and college level students. I made these challenges to be accessible to everyone playing in the CTF, having starter challenges with guides to more complex challenges for the students who are more familiar with the concepts and want a challenge.</p>
+      </div>
+      <div class="project-item">
+        <h3>HackTheBox Capture the Flag (CTF)</h3>
+        <div class="project-dates">2022 - 2024</div>
+        <p class="project-description">Competed semi-annually in HackTheBox's University CTF events and Cyber Apocalypse CTF events, with a focus on the Reversing and Pwn categories. Over these events, I learned a lot about reverse engineering and some of the different anti-reversing mechanisms that can be found in software and how to get past them.</p>
+      </div>
+      <div class="project-item">
+        <h3>Windows Forensics Home Lab</h3>
+        <div class="project-dates">2024</div>
+        <p class="project-description">I built a Windows forensics lab to practice memory and disk analysis on virtual machines, simulating incident response scenarios. I captured memory dumps and disk images from Windows environments and used tools such as Volatility 3, RegRipper, and Timeline Explorer to extract forensic artifacts. This allowed me to reconstruct user activity, identify persistence mechanisms, and analyze evidence of malicious behavior. The lab gave me a deeper understanding of digital forensics methodology, chain of evidence considerations, and the practical workflow of analyzing compromised Windows systems.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="content-section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>Penetration Testing</li>
+            <li>Malware Analysis and Reverse Engineering</li>
+            <li>Network Design, Implementation, and Security</li>
+            <li>Programming and Scripting - Java, Python, PowerShell, Rust, C, JavaScript</li>
+            <li>Web Design and Development</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="home.js"></script>
+</body>
+</html>
